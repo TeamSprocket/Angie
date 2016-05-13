@@ -15,18 +15,18 @@ public class RobotMap {
 	 *  Talons
 	 */
 	
-	public static CANTalon TALON_frontRIGHT,
-						   TALON_centerRIGHT,
-						   TALON_backRIGHT,
-						   TALON_frontLEFT,
-						   TALON_centerLEFT,
-						   TALON_backLEFT,
-						   TALON_intakeTop,
-						   TALON_intakeBot,
-						   TALON_intakeActuation,
-						   TALON_hangActuation,          
-						   TALON_hangExtension, 
-						   TALON_spool;
+	public static CANTalon  TALON_frontRIGHT,
+				TALON_centerRIGHT,
+				TALON_backRIGHT,
+				TALON_frontLEFT,
+				TALON_centerLEFT,
+				TALON_backLEFT,
+				TALON_intakeTop,
+				TALON_intakeBot,
+				TALON_intakeActuation,
+				TALON_hangActuation,          
+				TALON_hangExtension, 
+				TALON_spool;
 	
 	/**
 	 *  Initialize every sensor and talon
