@@ -4,25 +4,25 @@ import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 
 public class OI {
-	public static Joystick JOYSTICK_throttleLeft, 
-						   JOYSTICK_throttleRight, 
-						   JOYSTICK_gamepad;
+	public static Joystick  JOYSTICK_throttleLeft, 
+				JOYSTICK_throttleRight, 
+				JOYSTICK_gamepad;
 
 	/**
 	 * Buttons
 	 */
 	public static JoystickButton BUTTON_turnOnCenter,
-								 BUTTON_intake, 
-								 BUTTON_outtake, 
-								 BUTTON_retract, 
-								 BUTTON_disable, 
-								 BUTTON_counterSpool, 
-								 BUTTON_slowLeft, 
-								 BUTTON_slowRight, 
-								 BUTTON_spoolSafety,
-								 BUTTON_spoolSafety2,
-								 BUTTON_driveIntake,
-								 BUTTON_driveOuttake;
+				     BUTTON_intake, 
+				     BUTTON_outtake, 
+				     BUTTON_retract, 
+				     BUTTON_disable, 
+				     BUTTON_counterSpool, 
+				     BUTTON_slowLeft, 
+				     BUTTON_slowRight, 
+				     BUTTON_spoolSafety,
+				     BUTTON_spoolSafety2,
+				     BUTTON_driveIntake,
+				     BUTTON_driveOuttake;
 
 	//instantiate joysticks/joystick buttons
 	public static void init() {
@@ -43,8 +43,6 @@ public class OI {
 		BUTTON_retract = new JoystickButton(JOYSTICK_gamepad, 6);
 		BUTTON_spoolSafety2 = new JoystickButton(JOYSTICK_gamepad, 7);
 		BUTTON_spoolSafety = new JoystickButton(JOYSTICK_gamepad, 8);
-		
-		
 	}
 
 }
