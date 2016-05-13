@@ -19,14 +19,13 @@ public class Drivetrain extends Subsystem {
 		RobotMap.TALON_backLEFT.set(speed);
 	}
 	
-	//				  speed      turn
-	public void drive(double t1, double t2) {
-		if (Math.abs(t2) < .1) {
-			setLeft(OI.BUTTON_slowLeft.get() ? .85 * -t1 : -t1);
-			setRight(OI.BUTTON_slowRight.get() ? .85 * -t1 : -t1);
+	public void drive(double speed, double turnAngle) {
+		if (Math.abs(turnAngle) < .1) {
+			setLeft((OI.BUTTON_slowLeft.get() ? .85 : 1) * -speed);
+			setRight((OI.BUTTON_slowRight.get() ? .85 : 1) * -speed);
 		} else {
-			setLeft(t2);
-			setRight(-t2);
+			setLeft(turnAngle);
+			setRight(-turnAngle);
 		}
 	}
 
