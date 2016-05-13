@@ -15,14 +15,15 @@ public class Auton extends Command {
 	
 	//times in milliseconds
 	private long touch = 550, 
-				 rock = 2000, 
-				 armDown = 1550, 
-				 armHold = 630, 
-				 low = 2500, 
-				 chev = 1700, 
-				 goal = 1000 + armHold, 
-				 backUp = 800,  
-				 touchAfter[] = {2200,0,0,300,2200};
+		     rock = 2000, 
+		     armDown = 1550, 
+		     armHold = 630, 
+		     low = 2500, 
+		     chev = 1700, 
+		     goal = 1000 + armHold, 
+		     backUp = 800,  
+		     touchAfter[] = {2200,0,0,300,2200};
+		     
 	public Auton() {
 	}
 
