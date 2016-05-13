@@ -5,9 +5,6 @@ import org.usfirst.frc.team3473.robot.Subsystems;
 
 import edu.wpi.first.wpilibj.command.Command;
 
-/**
- *
- */
 public class Hang extends Command {
 
 	public Hang() {
