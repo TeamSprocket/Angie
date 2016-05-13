@@ -15,7 +15,7 @@ public class Drive extends Command {
 
 	protected void execute() {
 		double speed = OI.JOYSTICK_throttleLeft.getY(), turn = OI.JOYSTICK_throttleRight.getX();
-		//						speed  								turn
+		//			speed  	   			   turn
 		Subsystems.drive.drive((Math.abs(speed) > .2) ? speed : 0, (Math.abs(turn) > .07) ? turn : 0);
 	}
 
